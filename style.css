@@ -1,0 +1,241 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    background-color: #eef2f7; 
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: #007bff; 
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+}
+
+.days-counter, .countdown, .exam-schedule {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+}
+
+.days-counter p, .countdown p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.countdown {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.countdown-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    background-color: #007bff; 
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.countdown-box p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.countdown-box span {
+    font-size: 18px;
+}
+
+.exam-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.exam-schedule th, .exam-schedule td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.exam-schedule th {
+    background-color: #007bff; 
+    color: #fff;
+    font-weight: bold;
+}
+
+.exam-schedule td {
+    background-color: #f9f9f9; 
+    color: #333;
+}
+
+.exam-schedule td.completed {
+    background-color: #ffe5e5; 
+    color: #d71920; 
+    font-weight: bold;
+}
+
+
+button, input {
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input:hover {
+    background-color: #0056b3; 
+    color: #fff;
+}
+
+
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+        font-size: 1.2em;
+    }
+
+    .countdown-box {
+        padding: 15px;
+        font-size: 18px;
+        gap: 15px;
+        flex-direction: column; 
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .exam-schedule table {
+        font-size: 14px; 
+    }
+
+    .exam-schedule th, .exam-schedule td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px; 
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+
+    .countdown-box p {
+        font-size: 16px;
+    }
+
+    .exam-schedule table {
+        font-size: 12px; 
+    }
+
+    .exam-schedule th, .exam-schedule td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px; 
+    }
+
+    header h1 {
+        font-size: 1em; 
+    }
+
+    .countdown-box {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .exam-schedule table {
+        font-size: 10px; 
+    }
+
+    .exam-schedule th, .exam-schedule td {
+        padding: 4px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .countdown-box {
+        padding: 15px;
+        font-size: 20px;
+        gap: 10px;
+        flex-direction: column; 
+        max-width: 80%; 
+    }
+
+    .countdown-box p {
+        font-size: 24px; 
+    }
+
+    .countdown-box span {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 641px) {
+    .countdown-box {
+        font-size: 16px; 
+        padding: 12px;
+    }
+
+    .countdown-box p {
+        font-size: 18px; 
+    }
+
+    .countdown-box span {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 300px) {
+    .countdown-box {
+        font-size: 14px; 
+        padding: 10px;
+    }
+
+    .countdown-box p {
+        font-size: 16px; 
+    }
+
+    .countdown-box span {
+        font-size: 12px; 
+    }
+}
