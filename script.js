@@ -35,7 +35,7 @@ function startCountdown() {
             hoursElement.textContent = "00";
             minutesElement.textContent = "00";
             secondsElement.textContent = "00";
-            document.querySelector(".countdown-box").textContent = "فات الأوان";
+            document.querySelector(".countdown-box").textContent = "انتهى الوقت وبدات الامتحانات";
             return;
         }
 
